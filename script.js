@@ -19,6 +19,6 @@ function userDetails() {
 function existUser(){
 	let nm = localStorage.getItem("username")
 	if(nm){
-		alert("Logged in as username")
+		alert("Logged in as existing user")
 	}
 }
