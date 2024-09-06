@@ -13,12 +13,12 @@ function userDetails() {
 		localStorage.removeItem("username")
 		localStorage.removeItem("password")
 	}
-	alert(`Logged in as ${name}`)
+	alert(`Logged in as`+ name)
 }
 
 function existUser(){
 	let nm = localStorage.getItem("username")
 	if(nm){
-		alert(`Logged in as ${nm}`)
+		alert("Logged in as"+ nm)
 	}
 }
