@@ -1,7 +1,7 @@
 //your JS code here. If required.
 let name = document.getElementById('username').value
 let p_word = document.getElementById('password').value
-let check = document.getElementById('checkbox')
+let check = document.getElementById('checkbox').checked
 
 function userDetails() {
 	if(check){
@@ -9,7 +9,8 @@ function userDetails() {
 		localStorage.setItem("password",p_word)
 	}
 	else{
-		localStorage.clear();
-		alert('Logged in as.')
+		localStorage.removeItem("username")
+		localStorage.removeItem("password")
 	}
+	alert('Logged in as.')
 }
