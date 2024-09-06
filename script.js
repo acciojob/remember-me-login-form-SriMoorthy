@@ -3,6 +3,7 @@ let name = document.getElementById('username').value
 let p_word = document.getElementById('password').value
 let check = document.getElementById('checkbox').checked
 
+
 function userDetails() {
 	if(check){
 		localStorage.setItem("username",name)
@@ -12,5 +13,12 @@ function userDetails() {
 		localStorage.removeItem("username")
 		localStorage.removeItem("password")
 	}
-	alert('Logged in as.')
+	alert(`Logged in as ${name}`)
+}
+
+function existUser(){
+	let nm = localStorage.getItem("username")
+	if(nm){
+		alert(`Logged in as ${nm}`)
+	}
 }
