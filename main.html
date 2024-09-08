@@ -11,17 +11,22 @@
 	<div class="form-container">
         <h1>Login Form</h1>
         <form id="loginForm">
+            <label for="username">Username:</label>
             <input type="text" id="username" placeholder="Username" required><br><br>
+            
+            <label for="password">Password:</label>
             <input type="password" id="password" placeholder="Password" required><br><br>
+            
             <div class="checkbox-container">
+				<label for="checkbox">Remember me:</label>
                 <input type="checkbox" id="checkbox">
-                <label for="checkbox">Remember me</label><br><br>
+				<br><br>
             </div>
-            <input type="submit" id="submit" value="Submit">
-			<br><br>
+            <input type="submit" id="submit" value="Submit"><br><br>
         </form>
         <button id="existing">Login as existing user</button>
     </div>
+
 	
     <script type="text/javascript" src="./script.js">
 </script>
