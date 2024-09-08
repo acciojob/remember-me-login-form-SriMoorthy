@@ -8,24 +8,20 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form method="post">
-		<h1>Login Form</h1>
-		<label for="usernamne">Username:</label>
-		<input type="text" placeholder="UserName" id="username"/>
-		<br>
-		<br>
-		<label for="password">Password:</label>
-		<input type="password" placeholder="Password" id="password"/>
-		<br>
-		<br>
-		<label for="checkbox">Remember me.</label>
-		<input type="checkbox" id="checkbox" checked/>
-		<br>
-		<br>
-		<input type="submit" id="submit" onclick="userDetails()" value="Submit"/>
-	</form>
-	<br>
-	<button id="existing" onclick="existUser()" value="Submit">Login as existing user</button>
+	<div class="form-container">
+        <h1>Login Form</h1>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required><br><br>
+            <input type="password" id="password" placeholder="Password" required><br><br>
+            <div class="checkbox-container">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Remember me</label><br><br>
+            </div>
+            <input type="submit" id="submit" value="Submit">
+			<br><br>
+        </form>
+        <button id="existing">Login as existing user</button>
+    </div>
 	
     <script type="text/javascript" src="./script.js">
 </script>
